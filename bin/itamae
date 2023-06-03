@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby
 
-require_relative "../lib/itamae/cli"
+if ENV["CI"]
+  require "itamae/cli"
+else
+  require_relative "../lib/itamae/cli"
+end
 Itamae::CLI.start

@@ -16,6 +16,7 @@ on:
 
 env:
   RUBYOPT: ${{ inputs.rubyopt }}
+  CI: true
 
 jobs:
   unit:
